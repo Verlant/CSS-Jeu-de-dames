@@ -1,0 +1,61 @@
+main {
+  width: 1100px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.plateau_dames {
+  width: 500px;
+  height: 500px;
+  border: 15px ridge #a42929;
+  display: grid;
+  grid-template: repeat(10, 1fr) / 1fr;
+}
+div > div {
+  display: grid;
+  grid-template: 1fr / repeat(10, 1fr);
+}
+.white {
+  background-color: #f5deb3;
+}
+.black {
+  background-color: black;
+}
+.pion {
+  display: grid;
+  grid-template: 40px / 40px;
+  justify-content: center;
+  align-content: center;
+}
+.pion_blanc {
+  background-color: white;
+  border-radius: 50%;
+}
+.pion_noir {
+  background-color: black;
+  border-radius: 50%;
+}
+.buttons {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+button {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.button_new_game {
+  width: 200px;
+  height: 200px;
+  background-color: #fffa9c;
+  border: 15px ridge #a42929;
+}
+.tour_joueur {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 15px ridge #a42929;
+}
